@@ -89,7 +89,7 @@ int TYPESIZE::g(string h){
     else if(h=="f"){return sizeof(float);}
     else if(h=="d"){return sizeof(double);}
     else if(h=="ld"){return sizeof(long double);}
-    else if(h=="w"){return sizeof(wchar_t);}
+    //else if(h=="w"){return sizeof(wchar_t);}
     else{
         throw("Wrong TypeName");
     }
@@ -178,9 +178,9 @@ void TYPESIZE::char_to_X(TYPE d,string totype){
             printv(i,times_a,times_b,*((double*)(d.main+i*times_b)));
         }else if(totype=="ld"){
             printv(i,times_a,times_b,*((long double*)(d.main+i*times_b)));
-        }else if(totype=="w"){
+        }/*else if(totype=="w"){
             printv(i,times_a,times_b,*((wchar_t*)(d.main+i*times_b)));
-        }
+        }*/
     }
     return ;
 };
