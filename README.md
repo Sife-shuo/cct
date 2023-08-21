@@ -6,6 +6,7 @@ You can compile using the following command
 ```shell
 g++ main.cpp -o cct.exe
 ```
+Or download the corresponding Releases.
 
 Then use it to calc.
 
