@@ -53,6 +53,9 @@ void usage(){
                     cout<<OUT<<"Wrong TypeName\n";
                 }
             }
+        }else if(u=="exit"){//exit
+            cout<<"[ Exit ]";
+            throw 0;
         }
     }
 }

@@ -22,7 +22,13 @@ int main(){
         cout<<IN;
         //string h;
         //getline(cin,h);
-        usage();
+        try{
+            usage();
+        }catch(int err){
+            if(err==0){
+                return 0;
+            }
+        }
     }
     return 0;
 }
