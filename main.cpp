@@ -19,7 +19,7 @@ int main(){
     TYPESIZE::turn(t,j,w);*/
     //cout<<h[0]<<endl<<h[1];
     while(true){
-        printf("[ In ]  << ");
+        cout<<IN;
         //string h;
         //getline(cin,h);
         usage();

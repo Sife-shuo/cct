@@ -91,7 +91,7 @@ int TYPESIZE::g(string h){
     else if(h=="ld"){return sizeof(long double);}
     //else if(h=="w"){return sizeof(wchar_t);}
     else{
-        throw("Wrong TypeName");
+        throw -1;
     }
     return 0;
 }
@@ -136,7 +136,7 @@ TYPE TYPESIZE::_to_char(string h){
 
 template <typename S>
 void printv(int i,int a,int b,S w){
-    printf("[ Out ] >> ");
+    cout<<OUT;
     cout<<"["<<i<<":"<<b*i<<'-'<<b*(i+1)<<"B]:"<<w<<endl;
     return ;
 }

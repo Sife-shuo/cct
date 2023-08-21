@@ -41,12 +41,18 @@ void usage(){
             if(!to.fflag){
                 printf("-");
             }
-            printf("[ Out ] >> ");
+            cout<<OUT;
             cout<<(to.main)<<endl;
         }else if(u=="p"){//pseudocode
             string ftype,ttype;
             cin>>ftype>>ttype;
-            TYPESIZE::turn(ftype,ttype);
+            try{
+                TYPESIZE::turn(ftype,ttype);
+            }catch(int err){
+                if(err==-1){
+                    cout<<OUT<<"Wrong TypeName\n";
+                }
+            }
         }
     }
 }

@@ -5,6 +5,8 @@ typedef struct NUM_DEV {
     std::string main;
     unsigned int dema;
 } NUM;
+char OUT[]={"[ Out ] >> "};
+char IN[]={"[ In ]  << "};
 
 using namespace std;
 
